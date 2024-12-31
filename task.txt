@@ -1,0 +1,8 @@
+
+1. Pasar todos los modelos por un optimizado
+2. Pasar todos los modelos a componentes 
+3. Construir el filesysmtem
+4. Optimizar los componentes de los modelos
+5. Crear una unica ecena en donde se se rendericen los modelos
+6. Crear un unico contenedor scroll x 
+7. Crear glasscontainer y hacer que sea el mismo simpre
