@@ -10,5 +10,8 @@ export function useScrollContainer() {
   const scrollLeft = () => {
 
   }
-
+  return {
+    scrollRight,
+    scrollLeft
+  }
 }

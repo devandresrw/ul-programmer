@@ -4,10 +4,10 @@ interface SectionProps {
   children: ReactNode;
 }
 
-export const Section = () => {
+export const Section = ({ children }: SectionProps) => {
   return (
     <div className="">
-
+      {children}
     </div>
   )
 }
