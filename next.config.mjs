@@ -12,10 +12,7 @@ const nextConfig = {
     }
     return config;
   },
-  experimental: {
-    modern: true,
-    scrollRestoration
-  }
+
 };
 
 export default nextConfig;
