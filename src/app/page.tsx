@@ -8,7 +8,7 @@ const App = dynamic(
 
 export default function HomePage() {
   return (
-    <div className="bg-black relative h-dvh w-dvw overflow-hidden">
+    <div className="h-dvh w-dvw overflow-hidden">
       <App />
     </div>
   )

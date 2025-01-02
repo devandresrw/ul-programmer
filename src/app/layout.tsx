@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { Viewport } from "next";
 import "./globals.css";
 
 
@@ -6,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "[Andrés R.W. | Frontend Engineer]",
   description: "Habilidades, proyectos y desarrollos",
-  authors: [{ name: "Andrés R.W.", url: "https://andresrw.com" }],
+  authors: [{ name: "Andrés R.W.", url: "andresrw.com" }],
   keywords: ["Andrés R.W.",
     "Frontend Engineer",
     "React", "Next.js",
@@ -14,7 +15,19 @@ export const metadata: Metadata = {
     "JavaScript", "HTML", "CSS",
     "Node", "Tailwind"],
   creator: "1508.agency",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     type: "website",
     locale: "es_ES",
@@ -33,12 +46,22 @@ export const metadata: Metadata = {
   },
   category: "Tecnología", // Ejemplo de categoría
   twitter: {
-    title: "[Andrés R.W. | Frontend Engineer]",
-    creator: "@andresrw",
-    site: "@andresrw",
-    description: "Habilidades, proyectos y desarrollos de Andrés R.W.",
+    card: 'summary_large_image',
+    title: 'Next.js',
+    description: 'The React Framework for the Web',
+    siteId: '1467726470533754880',
+    creator: '@nextjs',
+    creatorId: '1467726470533754880',
+    images: ['https://nextjs.org/og.png'], // Must be an absolute URL
   },
 };
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+}
 
 export default function RootLayout({
   children,
@@ -47,11 +70,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-      </head>
       <body>
         {children}
       </body>
