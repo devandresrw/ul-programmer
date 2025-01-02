@@ -68,8 +68,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const handleFontLoad = (event: React.SyntheticEvent<HTMLLinkElement>) => {
+    (event.target as HTMLLinkElement).media = 'all';
+  };
+
+
   return (
     <html lang="es">
+      <head>
+        <link media="print" onLoad={handleFontLoad} href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet" />
+      </head>
       <body>
         {children}
       </body>
