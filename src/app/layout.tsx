@@ -1,8 +1,40 @@
 import type { Metadata } from "next";
 import type { Viewport } from "next";
+import localFont from 'next/font/local'
 import "./globals.css";
 
-
+const jura = localFont({
+  src: [
+    {
+      path: './fonts/Jura-Light.woff2',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Jura-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Jura-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Jura-SemiBold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Jura-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    }
+  ],
+  variable: '--jura',
+  preload: true,
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "[Andrés R.W. | Frontend Engineer]",
@@ -68,18 +100,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  const handleFontLoad = (event: React.SyntheticEvent<HTMLLinkElement>) => {
-    (event.target as HTMLLinkElement).media = 'all';
-  };
-
-
   return (
     <html lang="es">
       <head>
-        <link media="print" onLoad={handleFontLoad} href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet" />
       </head>
-      <body>
+      <body className={`${jura.variable} antialiased`}>
         {children}
       </body>
     </html>
