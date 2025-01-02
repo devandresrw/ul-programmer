@@ -14,7 +14,9 @@ body{
   width: 100vw;
   text-rendering: optimizeSpeed;
   background-color: #222324;
+  color: #f6f6f6;
   margin: 0;
   font-family: "Jura", serif;
   font-optical-sizing: auto;
+  font-display: swap;
 }
