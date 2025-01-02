@@ -22,6 +22,7 @@ export default function MyImage({
       height={height}
       width={width}
       className={styles}
+      priority
     />
   );
 }
