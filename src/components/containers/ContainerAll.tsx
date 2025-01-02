@@ -1,14 +1,18 @@
 import dynamic from "next/dynamic"
-import { ModelKnot } from "../3d/models/TorusKnot"
 
 const GlassContainer = dynamic(
   () => import("@/components/containers/ContainerGlass")
     .then((mod) => mod.ContainerGlass),
-  { ssr: false })
+  { ssr: true })
 
 const Scene = dynamic(
   () => import("@/components/3d/Scene")
     .then((mod) => mod.Scene),
+  { ssr: false })
+
+const ModelKnot = dynamic(
+  () => import("@/components/3d/models/TorusKnot")
+    .then((mod) => mod.ModelKnot),
   { ssr: false })
 
 

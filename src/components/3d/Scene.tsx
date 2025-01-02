@@ -7,7 +7,6 @@ interface SceneProps {
   children: ReactNode;
 }
 
-
 const ConfigScene = dynamic(
   () => import("@/components/3d/ConfigScene")
     .then((mod) => mod.ConfigScene),
