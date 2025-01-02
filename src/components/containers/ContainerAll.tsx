@@ -3,8 +3,7 @@ import dynamic from "next/dynamic"
 const GlassContainer = dynamic(
   () => import("@/components/containers/ContainerGlass")
     .then((mod) => mod.ContainerGlass),
-  { ssr: false }
-)
+  { ssr: false })
 
 export default function ContainerAll() {
   return (
