@@ -1,4 +1,4 @@
-
+'use client'
 import { Mesh, MeshStandardMaterial, Group } from 'three'
 import { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
@@ -15,10 +15,10 @@ type GLTFResult = GLTF & {
 }
 
 
-export function Model(props: JSX.IntrinsicElements['group']) {
+export function ModelKnot(props: JSX.IntrinsicElements['group']) {
 
   const group = useRef<Group>(null)
-  const { nodes, materials } = useGLTF('/torusknot.glb') as GLTFResult
+  const { nodes, materials } = useGLTF('/modelo/torusknot.glb') as GLTFResult
 
   return (
     <group ref={group} {...props} dispose={null}>
@@ -57,4 +57,4 @@ export function Model(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-useGLTF.preload('/torusknot.glb')
+useGLTF.preload('/modelo/torusknot.glb')
