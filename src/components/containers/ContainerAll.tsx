@@ -1,3 +1,4 @@
+'use client'
 import dynamic from "next/dynamic"
 
 const GlassContainer = dynamic(
@@ -15,8 +16,22 @@ const ModelKnot = dynamic(
     .then((mod) => mod.ModelKnot),
   { ssr: false })
 
+const SectionContend = dynamic(
+  () => import("@/components/containers/SectionContend")
+    .then((mod) => mod.SectionContend),
+  { ssr: true })
+
+
+const ContainerSlides = dynamic(
+  () => import("@/components/slides/ContainerSlides")
+    .then((mod) => mod.ContainerSlides),
+  { ssr: true })
+
+const slidesComponentsLength = 6; // Número de componentes en el arreglo
+
 
 export default function ContainerAll() {
+
   return (
     <div className="h-screen w-screen relative">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-20">
@@ -27,7 +42,11 @@ export default function ContainerAll() {
       <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-30
       px-5 py-5">
         <GlassContainer>
-          <h1 className="text-white">dsf</h1>
+
+          <SectionContend>
+            <ContainerSlides />
+          </SectionContend>
+
         </GlassContainer>
       </div>
     </div>

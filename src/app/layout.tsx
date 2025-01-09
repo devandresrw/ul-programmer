@@ -104,7 +104,7 @@ export default function RootLayout({
     <html lang="es">
       <head>
       </head>
-      <body className={`${jura.variable} antialiased`}>
+      <body className={`${jura.className} antialiased`}>
         {children}
       </body>
     </html>
