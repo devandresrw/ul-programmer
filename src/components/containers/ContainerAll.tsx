@@ -11,10 +11,6 @@ const Scene = dynamic(
     .then((mod) => mod.Scene),
   { ssr: false })
 
-const ModelKnot = dynamic(
-  () => import("@/components/3d/models/TorusKnot")
-    .then((mod) => mod.ModelKnot),
-  { ssr: false })
 
 const SectionContend = dynamic(
   () => import("@/components/containers/SectionContend")
@@ -27,6 +23,13 @@ const ContainerSlides = dynamic(
     .then((mod) => mod.ContainerSlides),
   { ssr: true })
 
+const ContainersModel = dynamic(
+  () => import("@/components/3d/models/ContainersModel")
+    .then((mod) => mod.ContainersModel),
+  { ssr: true })
+
+
+
 const slidesComponentsLength = 6; // Número de componentes en el arreglo
 
 
@@ -36,7 +39,7 @@ export default function ContainerAll() {
     <div className="h-screen w-screen relative">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-20">
         <Scene>
-          <ModelKnot />
+          <ContainersModel />
         </Scene>
       </div>
       <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-30
