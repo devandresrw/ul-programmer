@@ -33,7 +33,7 @@ export const ContainerSlides = () => {
   const SlideComponent = slidesComponents[currentIndex];
 
   return (
-    <div className="container mx-auto">
+    <div className="container h-full w-full">
       <Btn onClick={increment} direction="right"
       />
       <SlideComponent />

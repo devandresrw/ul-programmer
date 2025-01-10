@@ -19,6 +19,7 @@ export const useAnimIntro = () => {
       {
         onComplete: () => {
           preHiden()
+          tl.invalidate
         },
         defaults: { duration: 0.6, ease: 'power3.out' }
       }

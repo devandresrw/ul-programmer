@@ -17,19 +17,21 @@ export const Btn = ({
         border-[1px]
         border-white
         rounded-full
-        p-3
+        p-4
+        md:p-8
         absolute
-        top-1/2
+        bottom-6
+        md:bottom-28
         glassbtn
         hover:bg-mbtnglass
         `, {
-        ['left-3']: direction === 'left',
-        ['right-3']: direction === 'right',
+        ['left-7 md:left-20']: direction === 'left',
+        ['right-6 md:right-20']: direction === 'right',
       })}
       disabled={disabled}>
       {direction === 'left'
-        ? <IoIosArrowBack />
-        : <IoIosArrowForward />}
+        ? <IoIosArrowBack className="size-5" />
+        : <IoIosArrowForward className="size-5" />}
     </button>
   )
 }

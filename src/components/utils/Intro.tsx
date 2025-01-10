@@ -17,8 +17,8 @@ export default function Intro() {
     refText3 } = useAnimIntro()
 
   return (
-    <div ref={refContainer} className="bg-mybgblack absolute flex flex-col 
-    items-center justify-center gap-5 z-50 h-screen w-screen">
+    <div ref={refContainer} className="bg-myblack absolute 
+    flex flex-col items-center justify-center gap-5 z-50 h-screen w-screen">
       <div ref={refImg} className="opacity-0">
         <Imga
           src="/a-blanca.svg"

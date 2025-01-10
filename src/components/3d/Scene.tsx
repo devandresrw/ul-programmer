@@ -21,8 +21,9 @@ const Postprocessing = dynamic(
 
 export const Scene = ({ children }: SceneProps) => {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={null} >
       <Canvas
+
         flat={true}
         dpr={[1, 1.5]}
         camera={{
@@ -35,14 +36,13 @@ export const Scene = ({ children }: SceneProps) => {
           antialias: true,
           powerPreference: "high-performance",
         }}
-        className="w-full h-full">
+        className="w-full h-[20rem]">
         <color attach="background" args={["#18191A"]} />
         <Suspense fallback={null}>
           <ConfigScene />
           <Postprocessing />
           {children}
         </Suspense>
-
       </Canvas>
     </Suspense>
   )
