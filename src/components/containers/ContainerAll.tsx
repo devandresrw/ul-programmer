@@ -45,11 +45,9 @@ export default function ContainerAll() {
       <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-30
       px-5 py-5">
         <GlassContainer>
-
           <SectionContend>
             <ContainerSlides />
           </SectionContend>
-
         </GlassContainer>
       </div>
     </div>

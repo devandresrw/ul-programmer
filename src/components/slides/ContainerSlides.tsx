@@ -34,10 +34,10 @@ export const ContainerSlides = () => {
 
   return (
     <div className="container mx-auto">
-      <Btn onClick={increment} direction="left"
+      <Btn onClick={increment} direction="right"
       />
       <SlideComponent />
-      <Btn onClick={decrement} direction="right" />
+      <Btn onClick={decrement} direction="left" />
     </div>
   )
 }

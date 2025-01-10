@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "mybgblack": "#18191A"
+        "mbtnglass": "rgba( 255, 255, 255, 0.25 )"
       },
     },
   },
