@@ -21,7 +21,7 @@ export default function Box({ numx, numy, position, size }: BoxProps) {
   });
 
   return (
-    <mesh ref={box} position={[20, 0, -5]}>
+    <mesh ref={box} position={position}>
       <meshBasicMaterial wireframe />
       <boxGeometry args={size} />
     </mesh>

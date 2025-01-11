@@ -7,7 +7,7 @@ interface OctahedronProps {
   numx: number;
   numy: number;
   numz: number;
-  size: number;
+  size: [number, number];
   position: [number, number, number];
 }
 
@@ -25,7 +25,7 @@ export default function Octahedron({ numx, numy, numz, size, position }: Octahed
   return (
     <mesh ref={octahedron} position={position}>
       <meshBasicMaterial wireframe />
-      <octahedronGeometry args={[size, 1]} />
+      <octahedronGeometry args={size} />
     </mesh>
   );
 };

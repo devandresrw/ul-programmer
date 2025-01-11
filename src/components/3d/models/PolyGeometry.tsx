@@ -6,17 +6,19 @@ import { useFrame } from '@react-three/fiber';
 interface BoxProps {
   numx: number;
   numy: number;
+  numz: number;
   size: [number, number, number];
   position: [number, number, number];
 }
 
-export default function Poly({ numx, numy, position, size }: BoxProps) {
+export default function Poly({ numx, numy, numz, position, size }: BoxProps) {
   const box = useRef<Mesh>(null!);
 
   useFrame(() => {
     if (box.current) {
       box.current.rotation.x += numx;
       box.current.rotation.y += numy;
+      box.current.rotation.z += numz;
     }
   });
 

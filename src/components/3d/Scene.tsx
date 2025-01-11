@@ -23,14 +23,13 @@ export const Scene = ({ children }: SceneProps) => {
   return (
     <Suspense fallback={null} >
       <Canvas
-
         flat={true}
         dpr={[1, 1.5]}
         camera={{
-          position: [0, 0, 5],
-          fov: 75,
+          position: [0, 0, 1],
+          fov: 55,
           near: 0.1,
-          far: 1000,
+          far: 3000,
         }}
         gl={{
           antialias: true,

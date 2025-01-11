@@ -1,13 +1,13 @@
 'use client'
 import { useRef } from "react"
-import { Mesh } from "three"
+import { Mesh, Sphere } from "three"
 import { useFrame } from "@react-three/fiber"
 
 interface TorusProps {
   numx: number
   numy: number
   numz: number
-  size: [number, number, number, number]
+  size: [number, number, number, number, number]
   position: [number, number, number]
 }
 
