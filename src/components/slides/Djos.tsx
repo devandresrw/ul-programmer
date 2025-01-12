@@ -64,7 +64,6 @@ export const DjosSlide = () => {
 
   ]
 
-
   return (
     <div className="p-4 flex flex-col justify-center items-center
     h-full gap-4">

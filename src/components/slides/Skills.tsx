@@ -1,3 +1,16 @@
+/**
+ FaReact,
+  SiTypescript,
+  SiNextdotjs,
+ SiThreedotjs,
+ RiTailwindCssFill
+
+ SiNestjs,
+ SiReactivex,
+ FaNode,
+  FaDocker,
+  BiLogoPostgresql
+ */
 import {
   SiNestjs,
   SiReactivex,

@@ -7,7 +7,7 @@ interface StoreState {
   decrement: () => void;
 }
 
-const slidesComponentsLength = 6; // Número de componentes en el arreglo
+const slidesComponentsLength = 7; // Número de componentes en el arreglo
 
 export const useStoreLayers = create<StoreState>((set) => ({
   currentIndex: 0, // Inicializa el índice con el valor que desees

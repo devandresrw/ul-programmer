@@ -7,6 +7,7 @@ import {
   SkillsSlide,
   DjosSlide,
   ProjectsSlide,
+  CodesSlide,
   ContactSlide
 } from '@/components'
 
@@ -16,6 +17,7 @@ const slidesComponents = [
   SkillsSlide,
   DjosSlide,
   ProjectsSlide,
+  CodesSlide,
   ContactSlide
 ]
 const Btn = dynamic(

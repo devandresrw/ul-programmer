@@ -1,9 +1,23 @@
 export const ContactSlide = () => {
   return (
     <div className="">
-      <h1>Contact</h1>
-      <p>
-        You can contact me at </p>
+      <form>
+        <div>
+          <label>asd</label>
+          <input type="name" />
+        </div>
+        <div>
+          <label>asd</label>
+          <input type="email" />
+        </div>
+        <div>
+          <label>asd</label>
+          <textarea />
+        </div>
+        <div className="">
+          <button>Submit</button>
+        </div>
+      </form>
     </div>
   )
 }
