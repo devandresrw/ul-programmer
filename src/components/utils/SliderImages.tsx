@@ -1,52 +1,64 @@
-import { useState, useEffect } from 'react'
-import MyImage from '@/components/utils/MyImage'
-import Link from 'next/link'
+import { useState, useEffect, ReactNode } from 'react'
 
-interface SliderProps {
-  src: string[]
-  links: string[]
+interface Slide {
+  contend: ReactNode;
 }
 
-export const SliderImages = ({ src, links }: SliderProps) => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+interface SliderProps {
+  slides: Slide[];
+}
+
+
+export const SliderImages = ({ slides }: SliderProps) => {
+  const [slide, setSlide] = useState(0)
+
+
+  const handleClick = (index: any) => {
+    setSlide(index)
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % src.length)
+      setSlide((slide) => (slide + 1) % slides.length)
     }, 3000)
+
     return () => clearInterval(interval)
-  },)
+  }, [slides.length])
 
   return (
-    <div className="relative w-full p-2 overflow-hidden">
-      <div
-        className="flex transition-transform duration-500"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
-        {src.map((image, index) => (
-          <div key={index} className="min-w-full h-full flex-shrink-0">
-            <Link href={links[index]}>
-              <MyImage
-                src={image}
-                alt={`Slide ${index}`}
-                styles="w-full h-full object-cover"
-                height={100}
-                width={50}
-                key={index}
-              />
-            </Link>
-          </div>
-        ))}
+    <div className='relative w-full max-w-2xl mx-auto'>
+      <div className='relative h-20 flex justify-center items-center'>
+        {
+          slides.map((item, index) => (
+            <div
+              className={`
+              absolute inset-0 transition-opacity duration-1000
+              ease-in-out flex justify-center items-center
+              ${index === slide ? 'opacity-100' : 'opacity-0'}  
+              `}
+              key={index}>
+              {item.contend}
+            </div>
+          ))
+        }
       </div>
-      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {src.map((_, index) => (
-          <span
-            key={index}
-            className={`w-3 h-3 rounded-full cursor-pointer ${index === currentIndex ? 'bg-white' : 'bg-gray-400'
-              }`}
-            onClick={() => setCurrentIndex(index)}
-          ></span>
-        ))}
+      <div className='flex justify-center mt-4'>
+        {
+          slides.map((_, index) => (
+            <span
+              key={index}
+              className={`
+              w-3 h-3 mx-1 rounded-full cursor-pointer
+              ${index === slide
+                  ? "border border-white/50"
+                  : "border border-white/80"}  
+              `}
+              onClick={() => handleClick(index)}
+            >
+            </span>
+          ))
+
+        }
       </div>
     </div>
   )
