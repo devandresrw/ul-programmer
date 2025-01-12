@@ -1,5 +1,6 @@
 //utills
 export { Btn } from '@/components/utils/Btn'
+export { SliderImages } from '@/components/utils/SliderImages'
 
 
 //Slides 

@@ -26,8 +26,8 @@ import { RiTailwindCssFill } from "react-icons/ri";
 export const SkillsSlide = () => {
   return (
     <div className="flex flex-wrap justify-center gap-5
-    items-center p-3 h-full w-full">
-      <SiTypescript size={30} />
+    items-center p-3  w-full h-full">
+      <SiTypescript size={35} />
       <FaNode size={30} />
       <FaReact size={30} />
       <RiTailwindCssFill size={30} />
