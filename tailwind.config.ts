@@ -12,6 +12,12 @@ const config: Config = {
         "myblack": "#18191A",
         "mbtnglass": "rgba( 255, 255, 255, 0.25 )"
       },
+      keyframes: {
+
+      },
+      animation: {
+        fadeIn: 'fadeIn 1s ease-in-out',
+      },
     },
   },
   plugins: [],

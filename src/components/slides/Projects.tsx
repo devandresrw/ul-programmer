@@ -1,12 +1,11 @@
 import { SliderImages } from "@/components/utils/SliderImages"
 import Link from 'next/link'
 import {
-  CodeWars,
-  FreeCodeCamp,
-  FrontendMentor,
-  HackTheBox,
-  HackerRank
-} from '@/components/utils/LogosDjos'
+  Agency,
+  Cuartel,
+  Humanitas,
+  Poesia
+} from '@/components/utils/LogosProyects'
 
 export const ProjectsSlide = () => {
 
@@ -14,53 +13,44 @@ export const ProjectsSlide = () => {
     {
       contend: (
         <Link
-          href={"https://www.codewars.com/users/devandresrw"}
+          href={"https://1508.agency/"}
           target='_blank'
         >
-          <CodeWars className='w-52' />
+          <Agency className='w-52' />
         </Link>
       )
     },
     {
       contend: (
         <Link
-          href={'https://www.freecodecamp.org/andresrw'}
+          href={'https://cuarteldos.art/'}
           target='_blank'
         >
-          <FreeCodeCamp className='w-52' />
+          <Cuartel className='w-52' />
         </Link>
       )
     },
     {
       contend: (
         <Link
-          href={'https://www.frontendmentor.io/profile/amporabipo'}
+          href={'https://humanitasmuseum.art/'}
           target='_blank'
         >
-          <FrontendMentor className='w-52' />
+          <Humanitas className='w-52' />
         </Link>
       )
     },
     {
       contend: (
         <Link
-          href={'hackthebox.com/'}
+          href={'https://poesiaycodigo.art/'}
           target='_blank'
         >
-          <HackTheBox className='w-52' />
+          <Poesia className='w-52' />
         </Link>
       )
     },
-    {
-      contend: (
-        <Link
-          href={'https://www.hackerrank.com/profile/aroldan0'}
-          target='_blank'
-        >
-          <HackerRank className='w-52' />
-        </Link>
-      )
-    }
+
   ]
 
   return (

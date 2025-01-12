@@ -19,16 +19,17 @@ export default function Intro() {
   return (
     <div ref={refContainer} className="bg-myblack absolute 
     flex flex-col items-center justify-center gap-5 z-50 h-screen w-screen">
-      <div ref={refImg} className="opacity-0">
+      <div ref={refImg} className="opacity-0 w-28 h-28">
         <Imga
           src="/a-blanca.svg"
           alt="image"
           width={100}
           height={100}
-          styles=""
+          styles="w-auto h-auto"
         />
       </div>
-      <div className="flex itens-center justify-center gap-5 text-white">
+      <div className="flex flex-col itens-center justify-center gap-5 text-white
+      md:flex-row text-center">
         <span ref={refText1} className="opacity-0">#FrontendEnginer</span>
         <span ref={refText2} className="opacity-0">#HxC</span>
         <span ref={refText3} className="opacity-0">#CreativeDeveloper</span>
