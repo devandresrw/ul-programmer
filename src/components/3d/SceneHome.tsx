@@ -27,7 +27,7 @@ const CleanupScene = () => {
 export const Scene = ({ children }: SceneProps) => {
 
   return (
-    <div className={`w-full h-full py-5 px-4 rounded-2xl`}>
+    <div className={`w-full h-full py-5 px-4 rounded-2xl lg:px-1 lg:pt-4 lg:pb-1`}>
     <Suspense fallback={null} >
       <Canvas
         flat={true}

@@ -11,6 +11,7 @@ export const SectionContend = ({ children }: SectionProps) => {
 
   return (
     <div className="h-[21rem] w-[18rem] md:h-[30rem] md:w-[35.5rem]
+    lg:w-[35rem] lg:h-[20rem]
    border-white border-[1px] border-opacity-30
     rounded-lg z-50 ">
       <div className="relative z-20 ">
