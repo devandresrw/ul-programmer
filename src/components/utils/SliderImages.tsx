@@ -13,7 +13,7 @@ export const SliderImages = ({ slides }: SliderProps) => {
   const [slide, setSlide] = useState(0)
 
 
-  const handleClick = (index: any) => {
+  const handleClick = (index: number) => {
     setSlide(index)
   }
 

@@ -1,6 +1,6 @@
 'use client'
 import { Canvas } from "@react-three/fiber";
-import { ReactNode, Suspense, useEffect, useRef } from "react";
+import { ReactNode, Suspense, useEffect } from "react";
 import { useThree } from "@react-three/fiber";
 
 interface SceneProps {

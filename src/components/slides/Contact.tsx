@@ -21,6 +21,7 @@ export const ContactSlide = () => {
             placeholder='[Nombre]'
             className='outline-none bg-transparent border-[1px] border-white border-opacity-50 rounded-md px-2 py-2'
           />
+          {errors.name && <span>{errors.name.message}</span>}
         </div>
         <div className='flex flex-col'>
 
@@ -40,12 +41,12 @@ export const ContactSlide = () => {
             {...register('message')}
             className='outline-none bg-transparent border-[1px] border-white border-opacity-50 rounded-md px-2 py-2'
           />
+          {errors.message && <span>{errors.message.message}</span>}
         </div>
         <div className="">
           <button
             className='w-full border-[1px] border-white border-opacity-50 rounded-md px-2 py-2
             hover:bg-mbtnglass'
-
             type='submit'>Submit</button>
         </div>
       </form>

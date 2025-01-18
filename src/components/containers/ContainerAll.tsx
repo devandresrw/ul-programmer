@@ -30,8 +30,6 @@ const ContainersModel = dynamic(
 
 
 
-const slidesComponentsLength = 6; // Número de componentes en el arreglo
-
 
 export default function ContainerAll() {
 

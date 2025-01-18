@@ -5,6 +5,7 @@ import {useFrame} from '@react-three/fiber'
 import { Mesh } from 'three';
 
 
+/**
 interface TorusKnotProps {
   numx: number;
   numy: number;
@@ -18,8 +19,9 @@ interface TorusKnotProps {
   rotation: [number, number, number];
   position: [number, number, number];
 }
+ */
 
-export default function TorusKnots({ ...props }: TorusKnotProps) {
+export default function TorusKnots() {
   const refKnot = useRef<Mesh>(null!);
 
   useFrame(() => {
