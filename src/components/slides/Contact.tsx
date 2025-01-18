@@ -6,7 +6,7 @@ export const ContactSlide = () => {
   const { register, handleSubmit, errors, onSubmit } = useContactForm()
   return (
     <div className="flex flex-col justify-center items-center h-full
-    px-4 py-1 gap-2">
+    px-4 py-1 gap-2 md:px-10 md:gap-10">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-2 border-[1px]
@@ -49,10 +49,11 @@ export const ContactSlide = () => {
             type='submit'>Submit</button>
         </div>
       </form>
-      <div className='flex rounded-lg py-1 items-center px-3 gap-5 border-[1px] '>
-        <SiCredly size={30} />
-        <SiLinkedin size={25} />
-        <SiGithub size={25} />
+      <div className='flex rounded-lg py-1 items-center px-3 gap-5 border-[1px]
+      md:py-2 md:px-4'>
+        <SiCredly size={30} className='md:w-10 md:h-10'/>
+        <SiLinkedin size={25} className='md:w-8 md:h-8'/>
+        <SiGithub size={25} className='md:w-8 md:h-8'/>
       </div>
     </div>
   )

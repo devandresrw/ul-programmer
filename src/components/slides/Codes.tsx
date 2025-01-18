@@ -41,8 +41,7 @@ export const CodesSlide = () => {
           <span className='md:text-[1.4rem] md:leading-normal md:px-4'>Front-end</span>
           <div className="border-[1px] border-opacity-50 border-white
           rounded-md p-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 
-          gap-4 w-full place-items-center
-          ">
+          gap-4 w-full place-items-center md:mt-3">
             <FaReact size={25} className="md:w-10 md:h-10"/>
             <SiTypescript size={25} className="md:w-10 md:h-10" />
             <SiNextdotjs size={25} className="md:w-10 md:h-10"/>
@@ -55,12 +54,12 @@ export const CodesSlide = () => {
           <span className='md:text-[1.4rem] md:leading-normal md:px-4'>Back-end</span>
           <div className="border-[1px] border-opacity-50 border-white
           rounded-md p-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 
-          gap-4 w-full place-items-center">
-            <SiNestjs size={25} />
-            <SiReactivex size={25} />
-            <FaNode size={25} />
-            <FaDocker size={25} />
-            <BiLogoPostgresql size={25} />
+          gap-4 w-full place-items-center md:mt-3">
+            <SiNestjs size={25} className="md:w-10 md:h-10"/>
+            <SiReactivex size={25} className="md:w-10 md:h-10"/>
+            <FaNode size={25} className="md:w-10 md:h-10"/>
+            <FaDocker size={25} className="md:w-10 md:h-10" />
+            <BiLogoPostgresql size={25} className="md:w-10 md:h-10"/>
           </div>
         </Link>
       </div>
