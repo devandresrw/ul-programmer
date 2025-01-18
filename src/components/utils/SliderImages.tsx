@@ -42,7 +42,7 @@ export const SliderImages = ({ slides }: SliderProps) => {
           ))
         }
       </div>
-      <div className='flex justify-center mt-4'>
+      <div className='flex justify-center mt-7'>
         {
           slides.map((_, index) => (
             <span

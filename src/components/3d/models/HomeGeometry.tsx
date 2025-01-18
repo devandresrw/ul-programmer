@@ -1,6 +1,6 @@
 'use client'
 import { Mesh } from "three";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useFrame } from "@react-three/fiber";
 
 interface GeometryProps {
@@ -16,6 +16,10 @@ export default function Geometryhome(
 ) {
   const dodeca = useRef<Mesh>(null!)
 
+
+  useEffect(() => {
+    return () => { }
+  }, [])
   useFrame(() => {
     if (dodeca.current) {
       dodeca.current.rotation.x += numx

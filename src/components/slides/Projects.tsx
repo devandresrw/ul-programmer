@@ -16,7 +16,7 @@ export const ProjectsSlide = () => {
           href={"https://1508.agency/"}
           target='_blank'
         >
-          <Agency className='w-52' />
+          <Agency className='w-52 md:w-72' />
         </Link>
       )
     },
@@ -26,7 +26,7 @@ export const ProjectsSlide = () => {
           href={'https://cuarteldos.art/'}
           target='_blank'
         >
-          <Cuartel className='w-52' />
+          <Cuartel className='w-52 md:w-72' />
         </Link>
       )
     },
@@ -36,7 +36,7 @@ export const ProjectsSlide = () => {
           href={'https://humanitasmuseum.art/'}
           target='_blank'
         >
-          <Humanitas className='w-52' />
+          <Humanitas className='w-52 md:w-72' />
         </Link>
       )
     },
@@ -46,7 +46,7 @@ export const ProjectsSlide = () => {
           href={'https://poesiaycodigo.art/'}
           target='_blank'
         >
-          <Poesia className='w-52' />
+          <Poesia className='w-52 md:w-72' />
         </Link>
       )
     },
@@ -54,9 +54,9 @@ export const ProjectsSlide = () => {
   ]
 
   return (
-    <div className="p-4 flex flex-col justify-center items-center
-    h-full gap-4">
-      <p className="text-center">
+    <div className="px-2 flex flex-col justify-center items-center
+    h-full gap-3 md:p-8 md:gap-8">
+      <p className="text-center md:text-[1.4rem] md:leading-normal md:px-4">
         Estos son algunos de los proyectos en los que he aportado
         con código y soluciones tecnológicas.
       </p>

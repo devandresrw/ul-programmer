@@ -1,5 +1,8 @@
 'use client'
+import {  useRef } from 'react';
 import { TorusKnot } from '@react-three/drei';
+import {useFrame} from '@react-three/fiber'
+import { Mesh } from 'three';
 
 
 interface TorusKnotProps {
@@ -17,10 +20,18 @@ interface TorusKnotProps {
 }
 
 export default function TorusKnots({ ...props }: TorusKnotProps) {
+  const refKnot = useRef<Mesh>(null!);
+
+  useFrame(() => {
+    if (refKnot.current) {
+      refKnot.current.rotation.z += 0.001;
+    }
+  });
+
   return (
-    <mesh>
+    <mesh ref={refKnot}>
       <TorusKnot
-        args={[8, 3, 100, 16]} // [radius, tube, tubularSegments, radialSegments]
+        args={[20, 5, 100, 16]} // [radius, tube, tubularSegments, radialSegments]
         position={[0, 0, -6]}
         rotation={[0, 0, 0]}
       >

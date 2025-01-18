@@ -5,12 +5,13 @@ import Image from "next/image"
 export const HomeSlide = () => {
   return (
     <>
-      <div className="absolute top-16  z-50">
+      <div className="absolute top-[3rem] md:right-44 md:top-[6rem] z-50">
         <Image
           src={'./logo.svg'}
           alt="andresrw"
           width={280}
           height={200}
+          className='h-auto md:w-96'
         />
       </div>
       <div className='rounded-3xl h-full p-1'>

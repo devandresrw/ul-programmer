@@ -18,7 +18,7 @@ export default function Intro() {
 
   return (
     <div ref={refContainer} className="bg-myblack absolute 
-    flex flex-col items-center justify-center gap-5 z-50 h-screen w-screen">
+    flex flex-col items-center justify-center gap-10 z-50 h-screen w-screen">
       <div ref={refImg} className="opacity-0 w-28 h-28">
         <Imga
           src="/a-blanca.svg"

@@ -39,26 +39,26 @@ import { RiTailwindCssFill } from "react-icons/ri";
 export const SkillsSlide = () => {
   return (
     <div className="flex flex-wrap justify-center gap-5
-    items-center p-3  w-full h-full">
-      <SiTypescript size={35} />
-      <FaNode size={30} />
-      <FaReact size={30} />
-      <RiTailwindCssFill size={30} />
-      <SiNextdotjs size={30} />
-      <SiStrapi size={30} />
-      <SiThreedotjs size={30} />
-      <SiNestjs size={30} />
-      <SiReactivex size={30} />
-      <SiMongodb size={30} />
-      <SiSqlite size={30} />
-      <SiMysql size={30} />
-      <BiLogoPostgresql size={30} />
-      <SiKubernetes size={30} />
-      <FaDocker size={30} />
-      <FaGitAlt size={30} />
-      <FaLinux size={30} />
-      <FaFigma size={30} />
-      <FaCpanel size={30} />
+    items-center p-3  w-full h-full md:p-8">
+      <SiTypescript size={35} className="md:w-14 md:h-14"/>
+      <FaNode size={30} className="md:w-14 md:h-14"/>
+      <FaReact size={30} className="md:w-14 md:h-14"/>
+      <RiTailwindCssFill size={30} className="md:w-14 md:h-14"/>
+      <SiNextdotjs size={30} className="md:w-14 md:h-14"/>
+      <SiStrapi size={30} className="md:w-14 md:h-14"/>
+      <SiThreedotjs size={30} className="md:w-14 md:h-14"/>
+      <SiNestjs size={30} className="md:w-14 md:h-14"/>
+      <SiReactivex size={30} className="md:w-14 md:h-14"/>
+      <SiMongodb size={30} className="md:w-14 md:h-14"/>
+      <SiSqlite size={30} className="md:w-14 md:h-14"/>
+      <SiMysql size={30} className="md:w-14 md:h-14"/>
+      <BiLogoPostgresql size={30} className="md:w-14 md:h-14"/>
+      <SiKubernetes size={30} className="md:w-14 md:h-14"/>
+      <FaDocker size={30} className="md:w-14 md:h-14"/>
+      <FaGitAlt size={30} className="md:w-14 md:h-14"/>
+      <FaLinux size={30} className="md:w-14 md:h-14"/>
+      <FaFigma size={30} className="md:w-14 md:h-14"/>
+      <FaCpanel size={30} className="md:w-14 md:h-14"/>
     </div>
   )
 }
