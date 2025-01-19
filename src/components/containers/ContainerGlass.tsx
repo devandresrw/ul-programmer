@@ -11,7 +11,7 @@ export const ContainerGlass = ({ children }: GlassContainerProps) => {
     <div className={clsx(`
       border-[1px] border-opacity-50 border-white
     rounded-xl w-full h-full glass  animate-fadeIn`,{
-      [`lg:flex lg:justify-center lg:items-end`]: currentIndex === 0,
+      [`lg:flex lg:justify-center lg:items-end xl:items-center`]: currentIndex === 0,
       [`flex justify-center 
     items-center`]: currentIndex >= 1,
     })
