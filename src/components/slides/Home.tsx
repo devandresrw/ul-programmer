@@ -6,7 +6,7 @@ export const HomeSlide = () => {
   return (
     <>
       <div className="absolute top-[3rem] md:right-44 md:top-[6rem] 
-      lg:left-[39%] lg:top-6 z-50">
+      lg:left-[39%] lg:top-[10%] z-50">
         <Image
           src={'./logo.svg'}
           alt="andresrw"

@@ -23,7 +23,7 @@ export const Btn = ({
         bottom-6
         md:bottom-28
         glassbtn
-        lg:bottom-52
+        lg:bottom-[45%]
         lg:p-3
         hover:bg-mbtnglass
         `, {
