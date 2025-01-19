@@ -15,8 +15,7 @@ export const DjosSlide = () => {
       contend: (
         <Link
           href={"https://www.codewars.com/users/devandresrw"}
-          target='_blank'
-        >
+          target='_blank'>
           <CodeWars className='w-52 md:w-72 lg:w-56' />
         </Link>
       )
