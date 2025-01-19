@@ -11,14 +11,12 @@ export const SectionContend = ({ children }: SectionProps) => {
   const nameIndex = useStoreLayers(state => state.nameIndex);
 
   return (
-    <div className={clsx(`
+    <div className={`
       h-[21rem] w-[18rem] md:h-[30rem] md:w-[35.5rem]
-    lg:w-[40%] lg:h-[22rem]
+      lg:w-[27rem] lg:h-[16rem]
    border-white border-[1px] border-opacity-30
     rounded-lg z-50
-    `,{
-      [`lg:mb-5 xl:mb-0`]: currentIndex === 0,
-    })}>
+    `}>
       <div className="relative z-20 ">
         <span className='absolute top-[-1.4rem] left-1/2 
         transform -translate-x-1/2 px-2 py-1 text-black
