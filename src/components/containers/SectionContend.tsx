@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { useStoreLayers } from '@/stores/useStoreLayers'
-import clsx from 'clsx';
+
 
 interface SectionProps {
   children: ReactNode;

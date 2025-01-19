@@ -16,7 +16,7 @@ export const ProjectsSlide = () => {
           href={"https://1508.agency/"}
           target='_blank'
         >
-          <Agency className='w-52 md:w-72' />
+          <Agency className='w-52 md:w-72 lg:h-10' />
         </Link>
       )
     },
