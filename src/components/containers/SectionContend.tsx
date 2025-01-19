@@ -17,7 +17,7 @@ export const SectionContend = ({ children }: SectionProps) => {
    border-white border-[1px] border-opacity-30
     rounded-lg z-50
     `,{
-      [`mb-5`]: currentIndex === 0,
+      [`lg:mb-5 xl:mb-0`]: currentIndex === 0,
     })}>
       <div className="relative z-20 ">
         <span className='absolute top-[-1.4rem] left-1/2 
