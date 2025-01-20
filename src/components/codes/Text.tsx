@@ -4,10 +4,10 @@ import { Text } from '@react-three/drei'
 import { VideoTexture } from 'three'
 
 interface TextVideoProps {
-    mes
+   text: string
 }
 
-export const TextVideo = () => {
+export const TextVideo = ({text}: TextVideoProps) => {
     const [video] = useState(()=> 
             Object.assign(document.createElement('video'),
             {
@@ -16,12 +16,18 @@ export const TextVideo = () => {
                 loop: true,
                 muted: true,
             }))
-    useEffect(() => void video.play, [video])
+
+    useEffect(() => void video.play(), [video])
     const videoTexture = new VideoTexture(video)
     
     return(
-        <Text font='' fontSize={} letterSpacing={} position={}>
-            {}
+        <Text 
+        font='/Jura-SemiBold.woff' 
+        fontSize={2} 
+        letterSpacing={-0.06} 
+        position={[0,0,0]}>
+            {text}
+            <meshBasicMaterial toneMapped={false} map={videoTexture} />
         </Text>
     )
 }

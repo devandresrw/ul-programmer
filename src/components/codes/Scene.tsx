@@ -1,27 +1,35 @@
+'use client'
 import {Suspense} from 'react'
 import {Canvas} from '@react-three/fiber'
-import {SceneConfig, PostScene} from '@/components'
+import {SceneConfig, PostScene, TextVideo} from '@/components'
 
-export const SceneCodes = () => {
+interface SceneCodesProps {
+    text: string
+    styles: string
+}
+
+export const SceneCodes = ({text, styles}:SceneCodesProps) => {
     return(
-        <Suspense>
+        <div className='w-[30rem] h-[5rem]'>
+               <Suspense>
             <Canvas flat shadows
             dpr={[1,1.5]}
             gl={{
                 antialias: true,
                 powerPreference: 'low-power'
             }}
+            
         >
-            <color attach={'background'} args={['#18191A']} />
+            
             <Suspense>
                 <SceneConfig />
                 <PostScene />
                 <group>
-                    
+                    <TextVideo text={text} />
                 </group>
             </Suspense>
         </Canvas>
-        </Suspense>
-        
+        </Suspense> 
+        </div>
     )
 }

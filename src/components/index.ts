@@ -13,7 +13,7 @@ export { CodesSlide } from '@/components/slides/Codes'
 export { ContactSlide } from '@/components/slides/Contact'
 export { ContainerSlides } from '@/components/slides/ContainerSlides'
 
-//Geometries 
+//Geometries    
 export { ContainersModel } from '@/components/3d/models/ContainersModel'
 export { default as HomeGeometry } from '@/components/3d/models/HomeGeometry'
 export { default as TorusKnots } from '@/components/3d/models/TorusKnot'
@@ -22,3 +22,4 @@ export { default as TorusKnots } from '@/components/3d/models/TorusKnot'
 export { SceneCodes } from '@/components/codes/Scene'
 export { SceneConfig } from '@/components/codes/ConfigScene'
 export { PostScene } from '@/components/codes/PostScene'
+export { TextVideo } from '@/components/codes/Text'

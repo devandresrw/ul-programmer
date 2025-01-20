@@ -1,3 +1,4 @@
+'use client'
 import {OrthographicCamera, OrbitControls} from '@react-three/drei'
 
 export const SceneConfig = () => {
