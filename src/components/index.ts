@@ -18,8 +18,7 @@ export { ContainersModel } from '@/components/3d/models/ContainersModel'
 export { default as HomeGeometry } from '@/components/3d/models/HomeGeometry'
 export { default as TorusKnots } from '@/components/3d/models/TorusKnot'
 
-/*
-
-
-
-*/
+//Codes
+export { SceneCodes } from '@/components/codes/Scene'
+export { SceneConfig } from '@/components/codes/ConfigScene'
+export { PostScene } from '@/components/codes/PostScene'
