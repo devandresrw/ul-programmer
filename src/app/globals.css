@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -40,4 +42,21 @@ body {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
+}
+
+pre{
+  margin: 0;
+  user-select: none;
+  padding: 0;
+  line-height: 1em;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: radial-gradient(circle, #ff6188 0%, #fc9867 50%, #ffd866 100%);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  z-index: 9;
+  mix-blend-mode: difference;
 }
