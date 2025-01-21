@@ -13,14 +13,16 @@ export const CategoryButtons = ({categories}:CategoryButtonsProps) =>{
     return(
         <div className='flex items-center gap-2 justify-center'>
             <SpotlightCard
-                className={`px-4 py-1`}
+                className={`px-4 py-1 ${category} hover:cursor-pointer`}
                 onClick={() => setCategory(null)}
             >
                 All
             </SpotlightCard>
             {categories.map((category) => (
                 <SpotlightCard
-                className=''
+                className='px-4 py-1 hover:cursor-pointer'
+                key={category}
+                onClick={() => setCategory(category)}
             >
                 {category}   
             </SpotlightCard>

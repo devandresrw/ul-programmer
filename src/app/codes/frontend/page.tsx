@@ -2,8 +2,12 @@ import { Squares } from "@/components/codes/Squares";
 import { SceneCodes } from "@/components";
 import { SpotlightCard} from "@/components/codes/PixelCard";
 import {CategoryButtons} from '@/components/codes/CategoryButtons'
+import {FilteredCards} from '@/components/codes/FilteredCards'
 
 export default function CodePage() {
+
+  const categories = ['Newbie', 'Junior', 'Intermediate', 'Advanced', 'Guru'];
+
   return(
     <div className="relative">
         <Squares  direction="diagonal" squareSize={70}/>
@@ -24,7 +28,8 @@ export default function CodePage() {
           </SpotlightCard>
       </div>
       <div className="">
-        <CategoryButtons categories={['Fácil', 'Intermedio', 'Difícil']} />
+        <CategoryButtons categories={categories} />
+        <FilteredCards />
       </div>
       </div>
     </div>

@@ -7,5 +7,8 @@ interface CategoryStore {
 
 export const useCategoryStore = create<CategoryStore>((set) => ({
   category: null,
-  setCategory: (category) => set({ category }),
+  setCategory: (category) => {
+    set({ category })
+    console.log(category)
+  },
 }));
