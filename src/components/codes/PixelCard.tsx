@@ -5,12 +5,14 @@ interface SpotlightCardProps {
   children: ReactNode;
   className?: string;
   spotlightColor?: string;
+  onClick?: () => void;
 }
 
 export const SpotlightCard = ({ 
   children, 
   className = "", 
-  spotlightColor = "rgba(255, 255, 255, 0.25)" 
+  spotlightColor = "rgba(255, 255, 255, 0.25)",
+  onClick, 
 }: SpotlightCardProps) => {
   const divRef = useRef<HTMLDivElement | null>(null);
   const [isFocused, setIsFocused] = useState(false);
@@ -50,6 +52,7 @@ export const SpotlightCard = ({
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={onClick}
       className={`relative rounded-3xl border border-neutral-800 bg-neutral-900 overflow-hidden ${className}`}
       tabIndex={0} // Añadido para accesibilidad
     >

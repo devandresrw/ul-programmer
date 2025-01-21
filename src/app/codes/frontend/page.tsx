@@ -1,33 +1,63 @@
-import { ASCIIText} from '@/components/codes/TextAscci'
-export default function FrontendPage() {
-  return (
-    <div className="">
-  
-<ASCIIText
-  text='front-end'
-  enableWaves={true}
-  asciiFontSize={8}
-  planeBaseHeight={9}
-  textFontSize={3}
-/>    
+import { Squares } from "@/components/codes/Squares";
+import { SceneCodes } from "@/components";
+import { SpotlightCard} from "@/components/codes/PixelCard";
+import {CategoryButtons} from '@/components/codes/CategoryButtons'
+
+export default function CodePage() {
+  return(
+    <div className="relative">
+        <Squares  direction="diagonal" squareSize={70}/>
+        <div className="absolute w-full h-full inset-0 flex 
+         flex-col justify-start items-center gap-2">
+        <div className="mt-10 botder-2 border-gray-300
+      flex flex-col justify-center items-center gap-2">
+          <SceneCodes text='[ FRONT-END ]' styles='' />  
+          <SpotlightCard
+            className="px-4 py-4"
+            spotlightColor="rgba(53, 100, 122, 0.25)">
+          <p className='text-center text-base leading-[19px] w-[22rem] 
+           rounded-lg font-black text-zinc-300'>
+          Mis habilidades de frontend fueron puestas a prueba en los 
+          siguientes retos, filtralos en niveles de dificultad, cada uno
+          cuenta con una descripción y tecnologías utilizadas.
+          </p>
+          </SpotlightCard>
+      </div>
       <div className="">
-        <div className="">
-          <p>Front-end</p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Vue.js</li>
-            <li>Angular</li>
-          </ul>
-        </div>
-        <div className="">
-          <p>Descripción</p>
-          <p>El front-end es la parte de la aplicación que interactúa con los usuarios. Es la parte de la aplicación que los usuarios ven y con la que interactúan. El front-end se compone de tres partes: la estructura (HTML), la presentación (CSS) y la interactividad (JavaScript).</p>
-        </div>
+        <CategoryButtons categories={['Fácil', 'Intermedio', 'Difícil']} />
+      </div>
+      </div>
+    </div>
+         
+  )
+}
+
+/*
+import {SceneCodes} from '@/components'
+
+
+export default function CodePage() {
+  return (
+    <div className="flex justify-center">
+      <div className="mt-10 botder-2 border-gray-300
+      flex flex-col justify-center items-center gap-10">
+          <SceneCodes text='[ DEV_CODES ]' styles='' />  
+          <p className='text-center text-base w-[28rem]'>
+          Aquí encontrarás una colección de proyectos de 
+          desarrollo web que muestran mi experiencia en 
+          crear soluciones completas, desde el frontend 
+          hasta el backend. Explora cómo utilizo tecnologías
+           como React, Next JS, y Nest JS para dar vida a
+            ideas innovadoras y resolver problemas del mundo real.
+          </p>
+      </div>
+      <div className="">
+
       </div>
     </div>
   )
 }
+
+
+
+*/

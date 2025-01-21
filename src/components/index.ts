@@ -19,7 +19,7 @@ export { default as HomeGeometry } from '@/components/3d/models/HomeGeometry'
 export { default as TorusKnots } from '@/components/3d/models/TorusKnot'
 
 //Codes
-export { SceneCodes } from '@/components/codes/Scene'
+export { SceneCodes } from '@/components/codes/SceneCodes'
 export { SceneConfig } from '@/components/codes/ConfigScene'
 export { PostScene } from '@/components/codes/PostScene'
 export { TextVideo } from '@/components/codes/Text'

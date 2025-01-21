@@ -5,7 +5,7 @@ import {SceneConfig, PostScene, TextVideo} from '@/components'
 
 interface SceneCodesProps {
     text: string
-    styles: string
+    styles?: string
 }
 
 export const SceneCodes = ({text, styles}:SceneCodesProps) => {
