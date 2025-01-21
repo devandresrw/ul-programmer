@@ -20,18 +20,18 @@ import {
 
 export default function CodePage() {
   return(
-    <div className="relative">
+    <div className="relative overflow-hidden">
         <Squares />
         <div className=" absolute w-full h-full inset-0 flex justify-center items-start">
-        <div className="mt-10 botder-2 border-gray-300
-      flex flex-col justify-center items-center gap-2">
-          <SceneCodes text='[ DEV_CODES ]' styles='' />  
+        <div className="mt-3 flex flex-col justify-center items-center gap-2
+        md:gap-10 md:mt-10">
+          <SceneCodes text='[ DEV_CODES ]' styles='w-10' />  
           <SpotlightCard
             className="px-4 py-4"
             spotlightColor="rgba(53, 100, 122, 0.25)"
           >
-          <p className='text-center text-base leading-[19px] w-[22rem] 
-           rounded-lg font-black text-zinc-300'>
+          <p className='text-center text-base   
+           rounded-lg font-black text-zinc-300 w-64 md:w-96'>
           Aquí encontrarás una colección de proyectos de 
           desarrollo web que muestran mi experiencia en 
           crear soluciones completas, desde el frontend 
@@ -40,14 +40,15 @@ export default function CodePage() {
             ideas innovadoras y resolver problemas del mundo real.
           </p>
           </SpotlightCard>
-          <div className="flex justify-center items-center gap-2">
+          <div className="flex flex-col justify-center items-center gap-2
+          md:">
               <Link href={'/codes/frontend'} className='text-center'>
               <SpotlightCard
               className="px-3 py-3 "
               spotlightColor="rgba(97, 151, 165, 0.25)"
              >
-              <span className="text-center">Front-end</span>
-              <div className="grid grid-rows-2 place-items-center gap-2">
+              <span className="mb-2 md:mb-4">Front-end</span>
+              <div className="flex justify-center items-center gap-2">
               <FaReact size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
               <SiTypescript size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7" />
               <SiNextdotjs size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
@@ -57,13 +58,14 @@ export default function CodePage() {
               </div>
               </SpotlightCard> 
               </Link>
-             <Link href={'/codes/backend'} >
+             <Link href={'/codes/backend'} 
+             className="text-center">
              <SpotlightCard 
-                className="px-3 py-1"
+                className="px-3 py-3"
                 spotlightColor="rgba(174, 80, 97, 0.25)"
               >
-              <span>Back-end</span>
-              <div className="">
+              <span className="mb-2 md:mb-4 ">Back-end</span>
+              <div className="flex justify-center items-center gap-2">
               <SiNestjs size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
             <SiReactivex size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
             <FaNode size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
