@@ -4,7 +4,7 @@ import { SpotlightCard} from "@/components/codes/PixelCard";
 import {CategoryButtons} from '@/components/codes/CategoryButtons'
 import {FilteredCards} from '@/components/codes/FilteredCards'
 
-export default function CodePage() {
+export default function FrontendPage() {
 
   const categories = ['Newbie', 'Junior', 'Intermediate', 'Advanced', 'Guru'];
 
@@ -13,7 +13,7 @@ export default function CodePage() {
         <Squares  direction="diagonal" squareSize={70}/>
         <div className="absolute w-full h-full inset-0 flex 
          flex-col justify-start items-center gap-2">
-        <div className="mt-10 botder-2 border-gray-300
+        <div className="mt-2 botder-2 border-gray-300
       flex flex-col justify-center items-center gap-2">
           <SceneCodes text='[ FRONT-END ]' styles='' />  
           <SpotlightCard

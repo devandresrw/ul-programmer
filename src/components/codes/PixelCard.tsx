@@ -53,7 +53,7 @@ export const SpotlightCard = ({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={onClick}
-      className={`relative rounded-3xl border border-neutral-800 bg-neutral-900 overflow-hidden ${className}`}
+      className={`relative rounded-xl border border-neutral-800 bg-neutral-900 overflow-hidden ${className}`}
       tabIndex={0} // Añadido para accesibilidad
     >
       <div

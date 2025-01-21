@@ -1,12 +1,13 @@
 'use client'
 import { useCategoryStore } from '@/stores/useCategoryStore';
+import {Card} from '@/components/codes/Card'
 
 const cards = [
     {
         id: 1, 
         category: 'Newbie', 
-        image: '', 
-        title: 'title', 
+        image: '/ceo.jpg', 
+        title: 'NAme reto reto obvio', 
         description: 'lorem lorem', 
         technologies: ['React', 'TypeScript', 'TailwindCSS'],
         link: '',
@@ -15,7 +16,7 @@ const cards = [
     {
         id: 1, 
         category: 'Junior', 
-        image: '', 
+        image: '/ceo.jpg', 
         title: 'title', 
         description: 'lorem lorem', 
         technologies: ['React', 'TypeScript', 'TailwindCSS'],
@@ -25,7 +26,7 @@ const cards = [
     {
         id: 1, 
         category: 'Intermediate', 
-        image: '', 
+        image: '/ceo.jpg', 
         title: 'title', 
         description: 'lorem lorem', 
         technologies: ['React', 'TypeScript', 'TailwindCSS'],
@@ -35,7 +36,7 @@ const cards = [
     {
         id: 1, 
         category: 'Advanced', 
-        image: '', 
+        image: '/ceo.jpg', 
         title: 'title', 
         description: 'lorem lorem', 
         technologies: ['React', 'TypeScript', 'TailwindCSS'],
@@ -45,7 +46,7 @@ const cards = [
     {
         id: 1, 
         category: 'Guru', 
-        image: '', 
+        image: '/ceo.jpg', 
         title: 'title', 
         description: 'lorem lorem', 
         technologies: ['React', 'TypeScript', 'TailwindCSS'],
@@ -62,12 +63,12 @@ export const FilteredCards = () => {
     : cards;
 
   return (
-    <div className="grid gap-4">
+    <div className='max-w-xs lg:max-w-xl'>
+        <div className="flex gap-4 overflow-x-auto whitespace-nowrap py-5 ">
       {filteredCards.map((card) => (
-        <div key={card.id} className="card">
-          
-        </div>
+        <Card key={card.id} {...card} />
       ))}
+    </div>
     </div>
   );
 };
