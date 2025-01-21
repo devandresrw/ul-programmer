@@ -1,4 +1,5 @@
-import Image from "next/image"
+import { SpotLight } from "@react-three/drei"
+
 export const Card = () =>{
     return(
         <div className="">

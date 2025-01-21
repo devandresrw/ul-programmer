@@ -2,12 +2,56 @@
 import { useCategoryStore } from '@/stores/useCategoryStore';
 
 const cards = [
-  { id: 1, category: 'Newbie', content: 'Card 1' },
-  { id: 2, category: 'Junior', content: 'Card 2' },
-  { id: 3, category: 'Intermediate', content: 'Card 3' },
-  { id: 4, category: 'Advanced', content: 'Card 4' },
-  { id: 5, category: 'Guru', content: 'Card 5' },
-  // Agrega más cards según tu JSON
+    {
+        id: 1, 
+        category: 'Newbie', 
+        image: '', 
+        title: 'title', 
+        description: 'lorem lorem', 
+        technologies: ['React', 'TypeScript', 'TailwindCSS'],
+        link: '',
+        color: ''
+    },
+    {
+        id: 1, 
+        category: 'Junior', 
+        image: '', 
+        title: 'title', 
+        description: 'lorem lorem', 
+        technologies: ['React', 'TypeScript', 'TailwindCSS'],
+        link: '',
+        color: ''
+    },
+    {
+        id: 1, 
+        category: 'Intermediate', 
+        image: '', 
+        title: 'title', 
+        description: 'lorem lorem', 
+        technologies: ['React', 'TypeScript', 'TailwindCSS'],
+        link: '',
+        color: ''
+    },
+    {
+        id: 1, 
+        category: 'Advanced', 
+        image: '', 
+        title: 'title', 
+        description: 'lorem lorem', 
+        technologies: ['React', 'TypeScript', 'TailwindCSS'],
+        link: '',
+        color: ''
+    },
+    {
+        id: 1, 
+        category: 'Guru', 
+        image: '', 
+        title: 'title', 
+        description: 'lorem lorem', 
+        technologies: ['React', 'TypeScript', 'TailwindCSS'],
+        link: '',
+        color: ''
+    },
 ];
 
 export const FilteredCards = () => {
@@ -21,7 +65,7 @@ export const FilteredCards = () => {
     <div className="grid gap-4">
       {filteredCards.map((card) => (
         <div key={card.id} className="card">
-          {card.content}
+          
         </div>
       ))}
     </div>
