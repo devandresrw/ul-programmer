@@ -14,6 +14,7 @@ export const TextVideo = ({text}: TextVideoProps) => {
     const mobil = useMediaQuery({query: '(max-width: 425px)'})
     const tablet = useMediaQuery({query: '(max-width: 768px)'})
     const portatil = useMediaQuery({query: '(max-width: 1024px)'})
+    
     const sizeFonr = () => {
         if(mobil){
             return 1
