@@ -14,26 +14,26 @@ export const Btn = ({
     <button
       onClick={onClick}
       className={clsx(`
+        absolute
         border-[1px]
         border-white
         rounded-full
         p-4
-        md:p-8
-        absolute
-        bottom-6
+        bottom-14
+        md:p-7
         md:bottom-28
         glassbtn
         lg:bottom-[45%]
         lg:p-3
         hover:bg-mbtnglass
         `, {
-        ['left-7 md:left-20']: direction === 'left',
-        ['right-6 md:right-20']: direction === 'right',
+        ['left-12 md:left-20']: direction === 'left',
+        ['right-12 md:right-20']: direction === 'right',
       })}
       disabled={disabled}>
       {direction === 'left'
-        ? <IoIosArrowBack className="size-5" />
-        : <IoIosArrowForward className="size-5" />}
+        ? <IoIosArrowBack className="size-3" />
+        : <IoIosArrowForward className="size-3" />}
     </button>
   )
 }

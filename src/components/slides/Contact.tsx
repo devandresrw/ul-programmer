@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { useContactForm } from '@/hooks/useContactForm'
-import { SiCredly,SiLinkedin, SiGithub } from "react-icons/si";
 
 
 export const ContactSlide = () => {
@@ -57,18 +56,7 @@ export const ContactSlide = () => {
             type='submit'>Submit</button>
         </div>
       </form>
-      <div className='flex rounded-lg py-1 items-center px-3 gap-5 border-[1px]
-      md:py-2 md:px-4 lg:border-opacity-30'>
-        <Link href={'https://www.credly.com/users/andres-roldan-wilches/badges'} target='_blank'>
-        <SiCredly size={30} className='md:w-10 md:h-10 lg:w-5 lg:h-5'/>
-        </Link>
-        <Link href={'https://www.linkedin.com/in/andresrw/'} target='_blank'>
-        <SiLinkedin size={25} className='md:w-8 md:h-8 lg:w-5 lg:h-5'/>
-        </Link>
-        <Link href={'https://github.com/devandresrw/'} target='_blank'>
-        <SiGithub size={25} className='md:w-8 md:h-8 lg:w-5 lg:h-5'/>
-        </Link>
-        </div>
+      
     </div>
   )
 }

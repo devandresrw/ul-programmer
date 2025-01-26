@@ -38,27 +38,27 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 export const SkillsSlide = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-5
-    items-center p-3  w-full h-full md:p-8 lg:gap-3">
-      <SiTypescript size={35} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <FaNode size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <FaReact size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <RiTailwindCssFill size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <SiNextdotjs size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <SiStrapi size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <SiThreedotjs size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <SiNestjs size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <SiReactivex size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <SiMongodb size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <SiSqlite size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <SiMysql size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <BiLogoPostgresql size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <SiKubernetes size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <FaDocker size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <FaGitAlt size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <FaLinux size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <FaFigma size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
-      <FaCpanel size={30} className="md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+    <div className="flex flex-wrap justify-center items-center gap-1
+     p-3  w-full h-full md:p-8 lg:gap-3">
+      <SiTypescript  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <FaNode className="w-8 h-8 md:w-14 mx-2 md:h-14 lg:w-9 lg:h-9"/>
+      <FaReact  className="w-8 h-8 md:w-14 mx-2 md:h-14 lg:w-9 lg:h-9"/>
+      <RiTailwindCssFill  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <SiNextdotjs  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <SiStrapi  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <SiThreedotjs  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <SiNestjs  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <SiReactivex  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <SiMongodb  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <SiSqlite  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <SiMysql  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <BiLogoPostgresql  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <SiKubernetes  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <FaDocker  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <FaGitAlt  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <FaLinux  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <FaFigma  className="w-8 h-8 mx-2 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
+      <FaCpanel  className="w-14 h-10 md:w-14 md:h-14 lg:w-9 lg:h-9"/>
     </div>
   )
 }

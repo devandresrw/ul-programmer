@@ -27,6 +27,13 @@ import {
   FaReact,
 } from 'react-icons/fa'
 
+/*
+
+border-[1px] border-opacity-50 border-white
+          rounded-md p-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 
+          gap-4 w-full place-items-center md:mt-3 lg:mt-1 lg:gap-3
+*/
+
 export const CodesSlide = () => {
   return (
     <div className="p-4 flex flex-col justify-center items-center
@@ -36,13 +43,13 @@ export const CodesSlide = () => {
         Algunos proyectos que puedes ver para verificar mi nivel de
         desarrollo tanto en front-end y back-end.
       </p>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-2
-      md:gap-5">
-        <Link href={'/codes'} className='text-center'>
+      <div className="w-full flex justify-center items-center gap-3">
+        <Link href={'/codes'} className='text-center flex flex-col justify-center items-center
+        gap-1'>
           <span className='md:text-[1.4rem] md:leading-normal md:px-4 lg:text-lg'>Front-end</span>
-          <div className="border-[1px] border-opacity-50 border-white
-          rounded-md p-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 
-          gap-4 w-full place-items-center md:mt-3 lg:mt-1 lg:gap-3">
+          <div className="flex justify-center items-center flex-wrap
+          border-[1px] border-opacity-50 border-white gap-2 py-2 px-2
+          rounded-md">
             <FaReact size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
             <SiTypescript size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7" />
             <SiNextdotjs size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
@@ -51,11 +58,12 @@ export const CodesSlide = () => {
           </div>
         </Link>
 
-        <Link href={'/codes'} className='text-center'>
+        <Link href={'/codes'} className='text-center flex flex-col justify-center items-center
+        gap-1'>
           <span className='md:text-[1.4rem] md:leading-normal md:px-4 lg:text-lg'>Back-end</span>
-          <div className="border-[1px] border-opacity-50 border-white
-          rounded-md p-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 
-          gap-4 w-full place-items-center md:mt-3 lg:mt-1">
+          <div className="flex justify-center items-center flex-wrap
+          border-[1px] border-opacity-50 border-white gap-2 py-2 px-2
+          rounded-md">
             <SiNestjs size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
             <SiReactivex size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
             <FaNode size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
