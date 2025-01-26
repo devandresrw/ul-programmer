@@ -33,7 +33,7 @@ export const SliderImages = ({ slides }: SliderProps) => {
               className={`
               absolute inset-0 transition-opacity duration-1000
               ease-in-out flex justify-center items-center
-              ${index === slide ? 'opacity-100' : 'opacity-0'}  
+              ${index === slide ? 'opacity-100 z-10 pointer-events-auto' : 'opacity-0 z-0 pointer-events-none'}  
               `}
               key={index}>
               {item.contend}

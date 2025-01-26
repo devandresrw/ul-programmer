@@ -12,7 +12,7 @@ export const SectionContend = ({ children }: SectionProps) => {
 
   return (
     <div className={`
-      h-[21rem] w-[18rem] md:h-[30rem] md:w-[35.5rem]
+      h-[21rem] w-[18rem] md:h-[25rem] md:w-[26rem]
       lg:w-[27rem] lg:h-[16rem]
    border-white border-[1px] border-opacity-30
     rounded-lg z-50

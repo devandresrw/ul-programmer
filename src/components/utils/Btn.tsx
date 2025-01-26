@@ -21,14 +21,14 @@ export const Btn = ({
         p-4
         bottom-14
         md:p-7
-        md:bottom-28
+        md:bottom-8
         glassbtn
         lg:bottom-[45%]
         lg:p-3
         hover:bg-mbtnglass
         `, {
-        ['left-12 md:left-20']: direction === 'left',
-        ['right-12 md:right-20']: direction === 'right',
+        ['left-12 md:left-40']: direction === 'left',
+        ['right-12 md:right-40']: direction === 'right',
       })}
       disabled={disabled}>
       {direction === 'left'

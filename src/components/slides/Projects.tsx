@@ -12,42 +12,55 @@ export const ProjectsSlide = () => {
   const slides = [
     {
       contend: (
+        <div className="w-full h-full flex items-center justify-center">
         <Link
           href={"https://1508.agency/"}
           target='_blank'
+          className="flex items-center justify-center w-full h-full"
         >
-          <Agency className='w-52 md:w-72 lg:h-10' />
+          <Agency className='w-36 md:w-56' />
         </Link>
+        </div>
       )
     },
     {
       contend: (
+        <div className="w-full h-full flex items-center justify-center">
         <Link
           href={'https://cuarteldos.art/'}
           target='_blank'
+          className="flex items-center justify-center w-full h-full"
         >
-          <Cuartel className='w-52 md:w-72' />
+          <Cuartel className='w-36 md:w-56' />
         </Link>
+        </div>
       )
     },
     {
       contend: (
+        <div className="w-full h-full flex items-center justify-center">
         <Link
           href={'https://humanitasmuseum.art/'}
           target='_blank'
+          className="flex items-center justify-center w-full h-full"
         >
-          <Humanitas className='w-52 md:w-72' />
+          <Humanitas className='w-56 md:w-64' />
         </Link>
+        </div>
       )
     },
     {
       contend: (
-        <Link
-          href={'https://poesiaycodigo.art/'}
-          target='_blank'
-        >
-          <Poesia className='w-52 md:w-72' />
-        </Link>
+        <div className="w-full h-full flex items-center justify-center">
+          <Link
+            href={'https://poesiaycodigo.art/'}
+            target='_blank'
+            className="flex items-center justify-center w-full h-full"
+          >
+            <Poesia className='w-36 md:w-56' />
+          </Link>
+        </div>
+
       )
     },
 

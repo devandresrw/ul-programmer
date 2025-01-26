@@ -49,7 +49,7 @@ export const CodesSlide = () => {
           <span className='md:text-[1.4rem] md:leading-normal md:px-4 lg:text-lg'>Front-end</span>
           <div className="flex justify-center items-center flex-wrap
           border-[1px] border-opacity-50 border-white gap-2 py-2 px-2
-          rounded-md">
+          rounded-md hover:border-opacity-80 md:py-4">
             <FaReact size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
             <SiTypescript size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7" />
             <SiNextdotjs size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
@@ -63,7 +63,7 @@ export const CodesSlide = () => {
           <span className='md:text-[1.4rem] md:leading-normal md:px-4 lg:text-lg'>Back-end</span>
           <div className="flex justify-center items-center flex-wrap
           border-[1px] border-opacity-50 border-white gap-2 py-2 px-2
-          rounded-md">
+          rounded-md hover:border-opacity-80 md:py-4">
             <SiNestjs size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
             <SiReactivex size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>
             <FaNode size={25} className="md:w-10 md:h-10 lg:w-7 lg:h-7"/>

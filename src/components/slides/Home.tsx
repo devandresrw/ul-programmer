@@ -13,7 +13,7 @@ export const HomeSlide = () => {
   return (
     <>
       <div className='rounded-3xl h-full p-1 flex
-      flex-col justify-center items-centerm gap-4 px-5'>
+      flex-col justify-center items-center gap-4 px-5'>
         <Image
           src={'/logo.svg'}
           alt="andresrw"
@@ -23,33 +23,33 @@ export const HomeSlide = () => {
           className='h-auto w-auto mx-auto md:w-80 md:h-20'
         />
         <h1 className="text-center">[ Frontend Engineer ]</h1>
-        <div className="flex justify-center items-center gap-4 flex-wrap">
+        <div className="flex justify-center items-center gap-4 flex-wrap md:w-60">
           <Link href={'https://github.com/devandresrw'} target="_blank">
-            <FaGithub className="w-7 h-7 md:w-10 md:h-10" />
+            <FaGithub className="w-7 h-7 md:w-8 md:h-8" />
           </Link>
           <Link href={'https://mastodon.social/@andresrw'} target="_blank">
-            <FaMastodon className="w-7 h-7 md:w-10 md:h-10" />
+            <FaMastodon className="w-7 h-7 md:w-8 md:h-8" />
           </Link>
           <Link href={'https://x.com/andresrw_dev'} target="_blank">
-            <FaXTwitter className="w-7 h-7 md:w-10 md:h-10" />
+            <FaXTwitter className="w-7 h-7 md:w-8 md:h-8" />
           </Link>
           <Link href={'https://www.credly.com/users/andres-roldan-wilches/badges'} target='_blank'>
-            <SiCredly size={30} className='md:w-10 md:h-10 lg:w-5 lg:h-5' />
+            <SiCredly size={30} className='md:w-8 md:h-8 lg:w-5 lg:h-5' />
           </Link>
           <Link href={'https://www.linkedin.com/in/andresrw/'} target='_blank'>
             <SiLinkedin size={25} className='md:w-8 md:h-8 lg:w-5 lg:h-5' />
           </Link>
           <Link href={'https://www.instagram.com/programmer.andresrw/'} target="_blank">
-            <FaInstagram className="w-7 h-7 md:w-10 md:h-10" />
+            <FaInstagram className="w-7 h-7 md:w-8 md:h-8" />
           </Link>
           <Link href={'https://www.hackerrank.com/profile/aroldan0'} target="_blank">
-            <FaHackerrank className="w-7 h-7 md:w-10 md:h-10" />
+            <FaHackerrank className="w-7 h-7 md:w-8 md:h-8" />
           </Link>
           <Link href={'https://www.codewars.com/users/devandresrw'} target="_blank">
-            <SiCodewars className="w-7 h-7 md:w-10 md:h-10" />
+            <SiCodewars className="w-7 h-7 md:w-8 md:h-8" />
           </Link>
           <Link href={'https://www.frontendmentor.io/profile/amporabipo'} target="_blank">
-            <SiFrontendmentor className="w-7 h-7 md:w-10 md:h-10" />
+            <SiFrontendmentor className="w-7 h-7 md:w-8 md:h-8" />
           </Link>
         </div>
       </div>

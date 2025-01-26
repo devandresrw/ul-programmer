@@ -13,51 +13,69 @@ export const DjosSlide = () => {
   const slides = [
     {
       contend: (
-        <Link
-          href={"https://www.codewars.com/users/devandresrw"}
-          target='_blank'>
-          <CodeWars className='w-52 md:w-72 lg:w-56' />
-        </Link>
+        <div className="w-full h-full flex items-center justify-center">
+          <Link
+            href={"https://www.codewars.com/users/devandresrw"}
+            target='_blank'
+            className="flex items-center justify-center w-full h-full"
+          >
+            <CodeWars className='w-52 md:w-72 lg:w-56' />
+          </Link>
+        </div>
       )
     },
     {
       contend: (
-        <Link
-          href={'https://www.freecodecamp.org/andresrw'}
-          target='_blank'
-        >
-          <FreeCodeCamp className='w-52 md:w-72 lg:w-56' />
-        </Link>
+        <div className="w-full h-full flex items-center justify-center">
+          <Link
+            href={'https://www.freecodecamp.org/andresrw'}
+            target='_blank'
+            className="flex items-center justify-center w-full h-full"
+          >
+            <FreeCodeCamp className='w-52 md:w-72 lg:w-56' />
+          </Link>
+        </div>
       )
     },
     {
       contend: (
-        <Link
-          href={'https://www.frontendmentor.io/profile/amporabipo'}
-          target='_blank'
-        >
-          <FrontendMentor className='w-52 md:w-72 lg:w-56' />
-        </Link>
+        <div className="w-full h-full flex items-center justify-center">
+          <Link
+            href={'https://www.frontendmentor.io/profile/amporabipo'}
+            target='_blank'
+            className="flex items-center justify-center w-full h-full"
+          >
+            <FrontendMentor className='w-52 md:w-72 lg:w-56' />
+          </Link>
+        </div>
       )
     },
     {
       contend: (
-        <Link
-          href={'hackthebox.com/'}
-          target='_blank'
-        >
-          <HackTheBox className='w-52 md:w-72 lg:w-56' />
-        </Link>
+        <div className="w-full h-full flex items-center justify-center">
+
+          <Link
+            href={'https://hackthebox.com/'}
+            target='_blank'
+            className="flex items-center justify-center w-full h-full"
+          >
+            <HackTheBox className='w-52 md:w-72 lg:w-56' />
+          </Link>
+        </div>
       )
     },
     {
       contend: (
-        <Link
-          href={'https://www.hackerrank.com/profile/aroldan0'}
-          target='_blank'
-        >
-          <HackerRank className='w-52 md:w-72 lg:w-56' />
-        </Link>
+        <div className="w-full h-full flex items-center justify-center">
+
+          <Link
+            href={'https://www.hackerrank.com/profile/aroldan0'}
+            target='_blank'
+            className="flex items-center justify-center w-full h-full"
+          >
+            <HackerRank className='w-52 md:w-72 lg:w-56' />
+          </Link>
+        </div>
       )
     }
 
