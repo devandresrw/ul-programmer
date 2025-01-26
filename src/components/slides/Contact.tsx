@@ -6,12 +6,12 @@ export const ContactSlide = () => {
   const { register, handleSubmit, errors, onSubmit } = useContactForm()
   return (
     <div className="flex flex-col justify-center items-center h-full
-    px-4 py-1 gap-2 md:px-10 md:gap-10 lg:gap-2 lg:px-2 ">
+    px-4 py-1 gap-2 md:px-10 md:gap-10 lg:gap-2 lg:px-2">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-2 border-[1px]
         border-white border-opacity-50 py-4 w-full
-        px-2 rounded-md lg:py-2 lg:w-full"
+        px-2 rounded-md lg:py-2 lg:w-80"
       >
         <div className='flex flex-col'>
           <input

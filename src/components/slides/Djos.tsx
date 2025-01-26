@@ -85,7 +85,7 @@ export const DjosSlide = () => {
     <div className="p-4 flex flex-col justify-center items-center
     h-full gap-3 md:p-8 md:gap-8 lg:gap-3">
       <p className='text-center md:text-[1.4rem] md:leading-normal md:px-4
-      lg:text-lg lg:px-1'>Entreno y valido mis habilidaes constantemente
+      lg:text-xl lg:px-1'>Entreno y valido mis habilidaes constantemente
         desde mi algoritmia hasta mis habilidaes en ciberseguridad.
       </p>
       <SliderImages slides={slides} />

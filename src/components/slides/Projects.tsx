@@ -68,9 +68,9 @@ export const ProjectsSlide = () => {
 
   return (
     <div className="px-2 flex flex-col justify-center items-center
-    h-full gap-3 md:p-8 md:gap-8 lg:gap-4">
+    h-full gap-3 md:p-8 md:gap-8 lg:gap-3">
       <p className="text-center md:text-[1.4rem] md:leading-normal md:px-4
-      lg:text-lg lg:px-2">
+      lg:text-xl lg:px-2">
         Estos son algunos de los proyectos en los que he aportado
         con código y soluciones tecnológicas.
       </p>

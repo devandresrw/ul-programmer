@@ -24,7 +24,7 @@ export const Btn = ({
         md:bottom-8
         glassbtn
         lg:bottom-[45%]
-        lg:p-3
+        lg:p-5
         hover:bg-mbtnglass
         `, {
         ['left-12 md:left-40']: direction === 'left',
