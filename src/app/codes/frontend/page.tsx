@@ -1,8 +1,62 @@
 import { Squares } from "@/components/codes/Squares";
 import { SceneCodes } from "@/components";
-import { SpotlightCard } from "@/components/codes/PixelCard";
 import { CategoryButtons } from '@/components/codes/CategoryButtons'
 import { FilteredCards } from '@/components/codes/FilteredCards'
+
+
+const frontendCards = [
+  {
+      id: 1, 
+      category: 'Newbie', 
+      image: '/ceo.jpg', 
+      title: 'NAme reto reto obvio', 
+      description: 'lorem lorem', 
+      technologies: ['React', 'TypeScript', 'TailwindCSS'],
+      link: '',
+      color: ''
+  },
+  {
+      id: 1, 
+      category: 'Junior', 
+      image: '/ceo.jpg', 
+      title: 'title', 
+      description: 'lorem lorem', 
+      technologies: ['React', 'TypeScript', 'TailwindCSS'],
+      link: '',
+      color: ''
+  },
+  {
+      id: 1, 
+      category: 'Intermediate', 
+      image: '/ceo.jpg', 
+      title: 'title', 
+      description: 'lorem lorem', 
+      technologies: ['React', 'TypeScript', 'TailwindCSS'],
+      link: '',
+      color: ''
+  },
+  {
+      id: 1, 
+      category: 'Advanced', 
+      image: '/ceo.jpg', 
+      title: 'title', 
+      description: 'lorem lorem', 
+      technologies: ['React', 'TypeScript', 'TailwindCSS'],
+      link: '',
+      color: ''
+  },
+  {
+      id: 1, 
+      category: 'Guru', 
+      image: '/ceo.jpg', 
+      title: 'title', 
+      description: 'lorem lorem', 
+      technologies: ['React', 'TypeScript', 'TailwindCSS'],
+      link: '',
+      color: ''
+  },
+];
+
 
 export default function FrontendPage() {
 
@@ -13,14 +67,12 @@ export default function FrontendPage() {
       <Squares direction="diagonal" squareSize={70} />
       <div className="absolute w-full h-full inset-0 flex 
          flex-col justify-start items-center gap-10">
-        <div className="mt-2 botder-2 border-gray-300
-      flex flex-col justify-center items-center gap-2">
-          <SceneCodes text='[ FRONT-END ]' styles='mt-5 h-10' />
-        </div>
+        <SceneCodes text='[ FRONT-END ]' styles='w-48 h-10 mt-5
+          md:w-[40rem] md:h-24' />
         <div className="flex flex-col justify-center 
-      items-center gap-2">
+        items-center gap-2">
           <CategoryButtons categories={categories} />
-          <FilteredCards />
+          <FilteredCards cards={frontendCards}/>
         </div>
       </div>
     </div>
