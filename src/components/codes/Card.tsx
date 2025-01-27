@@ -16,9 +16,7 @@ interface CardProps {
 export const Card = ({ ...props }: CardProps) => {
     return (
         <Link href={props.link} target='_blank'>
-            <SpotlightCard
-                className="w-96"
-            >
+            <SpotlightCard className="w-72 md:w-96">
                 <div className="flex flex-col">
                     <div className="">
                         <Image 

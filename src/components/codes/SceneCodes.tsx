@@ -1,35 +1,34 @@
 'use client'
-import {Suspense} from 'react'
-import {Canvas} from '@react-three/fiber'
-import {SceneConfig, PostScene, TextVideo} from '@/components'
+import { Suspense } from 'react'
+import { Canvas } from '@react-three/fiber'
+import { SceneConfig, PostScene, TextVideo } from '@/components'
 
 interface SceneCodesProps {
     text: string
     styles?: string
 }
 
-export const SceneCodes = ({text, styles}:SceneCodesProps) => {
-    return(
-        <div className='w-[30rem] h-[5rem]'>
-               <Suspense>
-            <Canvas flat shadows
-            dpr={[1,1.5]}
-            gl={{
-                antialias: true,
-                powerPreference: 'low-power'
-            }}
-            
-        >
-            
+export const SceneCodes = ({ text, styles }: SceneCodesProps) => {
+    return (
+        <div className={styles}>
             <Suspense>
-                <SceneConfig />
-                <PostScene />
-                <group>
-                    <TextVideo text={text} />
-                </group>
+                <Canvas flat shadows
+                    dpr={[1, 1.5]}
+                    gl={{
+                        antialias: true,
+                        powerPreference: 'low-power'
+                    }}
+                    className='w-full h-full'
+                    >
+                    <Suspense>
+                        <SceneConfig />
+                        <PostScene />
+                        <group>
+                            <TextVideo text={text} />
+                        </group>
+                    </Suspense>
+                </Canvas>
             </Suspense>
-        </Canvas>
-        </Suspense> 
         </div>
     )
 }

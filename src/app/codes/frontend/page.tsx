@@ -1,30 +1,30 @@
 import { Squares } from "@/components/codes/Squares";
 import { SceneCodes } from "@/components";
-import { SpotlightCard} from "@/components/codes/PixelCard";
-import {CategoryButtons} from '@/components/codes/CategoryButtons'
-import {FilteredCards} from '@/components/codes/FilteredCards'
+import { SpotlightCard } from "@/components/codes/PixelCard";
+import { CategoryButtons } from '@/components/codes/CategoryButtons'
+import { FilteredCards } from '@/components/codes/FilteredCards'
 
 export default function FrontendPage() {
 
   const categories = ['Newbie', 'Junior', 'Intermediate', 'Advanced', 'Guru'];
 
-  return(
+  return (
     <div className="relative">
-        <Squares  direction="diagonal" squareSize={70}/>
-        <div className="absolute w-full h-full inset-0 flex 
-         flex-col justify-start items-center gap-2">
+      <Squares direction="diagonal" squareSize={70} />
+      <div className="absolute w-full h-full inset-0 flex 
+         flex-col justify-start items-center gap-10">
         <div className="mt-2 botder-2 border-gray-300
       flex flex-col justify-center items-center gap-2">
-          <SceneCodes text='[ FRONT-END ]' styles='' />  
-          
-      </div>
-      <div className="">
-        <CategoryButtons categories={categories} />
-        <FilteredCards />
-      </div>
+          <SceneCodes text='[ FRONT-END ]' styles='mt-5 h-10' />
+        </div>
+        <div className="flex flex-col justify-center 
+      items-center gap-2">
+          <CategoryButtons categories={categories} />
+          <FilteredCards />
+        </div>
       </div>
     </div>
-         
+
   )
 }
 

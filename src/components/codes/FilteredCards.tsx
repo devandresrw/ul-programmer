@@ -57,16 +57,14 @@ const cards = [
 
 export const FilteredCards = () => {
   const selectedCategory = useCategoryStore((state) => state.category);
-
   const filteredCards = selectedCategory
     ? cards.filter((card) => card.category === selectedCategory)
     : cards;
-
   return (
-    <div className='max-w-xs lg:max-w-xl'>
-        <div className="flex gap-4 overflow-x-auto whitespace-nowrap py-5 ">
-      {filteredCards.map((card) => (
-        <Card key={card.id} {...card} />
+    <div className='w-72 md:w-[36rem]'>
+        <div className="flex gap-4 overflow-x-auto whitespace-nowrap py-5">
+      {filteredCards.map((item,index) => (
+        <Card key={`${item}-${index}`} {...item} />
       ))}
     </div>
     </div>

@@ -11,7 +11,8 @@ export const CategoryButtons = ({categories}:CategoryButtonsProps) =>{
    const setCategory = useCategoryStore((state) => state.setCategory);
    
     return(
-        <div className='flex items-center gap-2 justify-center flex-wrap'>
+        <div className='flex items-center gap-2 justify-center flex-wrap
+        '>
             <SpotlightCard
                 className={`px-4 py-1 ${category} hover:cursor-pointer`}
                 onClick={() => setCategory(null)}

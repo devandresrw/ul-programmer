@@ -1,45 +1,32 @@
 import { Squares } from "@/components/codes/Squares";
 import { SceneCodes } from "@/components";
-import { SpotlightCard} from "@/components/codes/PixelCard";
-import {CategoryButtons} from '@/components/codes/CategoryButtons'
-import {FilteredCards} from '@/components/codes/FilteredCards'
+import { SpotlightCard } from "@/components/codes/PixelCard";
+import { CategoryButtons } from '@/components/codes/CategoryButtons'
+import { FilteredCards } from '@/components/codes/FilteredCards'
 
 export default function BackendPage() {
 
   const categories = ['Newbie', 'Junior', 'Intermediate', 'Advanced', 'Guru'];
 
-  return(
+  return (
     <div className="relative">
-        <Squares  direction="diagonal" squareSize={70}/>
-        <div className="absolute w-full h-full inset-0 flex 
-         flex-col justify-start items-center gap-2">
-        <div className="mt-2 botder-2 border-gray-300
-      flex flex-col justify-center items-center gap-2">
-          <SceneCodes text='[ BACK-END ]' styles='' />  
-          <SpotlightCard
-            className="px-4 py-4"
-            spotlightColor="rgba(53, 100, 122, 0.25)">
-          <p className='text-center text-base leading-[19px] w-[22rem] 
-           rounded-lg font-black text-zinc-300'>
-          Mis habilidades de backend fueron puestas a prueba en en diferentes
-          desarrollos que he llevado a cabo, filtralos en niveles de dificultad.
-          </p>
-          </SpotlightCard>
-      </div>
-      <div className="">
-        <CategoryButtons categories={categories} />
-        <FilteredCards />
-      </div>
+      <Squares direction="diagonal" squareSize={70} />
+      <div className="absolute w-full h-full inset-0 flex 
+         flex-col justify-start items-center gap-5 md:gap-8">
+          <SceneCodes text='[ BACK-END ]' styles='w-48 h-10 mt-5
+          md:w-[40rem] md:h-24' />
+        <div className="flex flex-col justify-center items-center" >
+          <CategoryButtons categories={categories} />
+          <FilteredCards />
+        </div>
       </div>
     </div>
-         
+
   )
 }
 
 /*
 import {SceneCodes} from '@/components'
-
-
 export default function CodePage() {
   return (
     <div className="flex justify-center">
