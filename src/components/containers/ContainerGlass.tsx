@@ -1,5 +1,3 @@
-import clsx from 'clsx';
-import {useStoreLayers} from '@/stores/useStoreLayers'
 
 interface GlassContainerProps {
   children: React.ReactNode;
