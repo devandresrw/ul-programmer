@@ -16,7 +16,6 @@ export const Squares = ({
   borderColor = '#737373',
   squareSize = 30,
   hoverFillColor = '#222',
-  children,
 }: SquaresProps) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const requestRef = useRef<number | null>(null);

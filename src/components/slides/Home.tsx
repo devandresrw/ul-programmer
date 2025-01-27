@@ -4,7 +4,7 @@ import {
   FaHackerrank
 } from "react-icons/fa";
 import { SiCodewars } from "react-icons/si";
-import { SiFrontendmentor, SiCredly, SiLinkedin, SiGithub } from "react-icons/si";
+import { SiFrontendmentor, SiCredly, SiLinkedin } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
 import Image from "next/image"
