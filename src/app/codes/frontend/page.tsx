@@ -10,7 +10,10 @@ const frontendCards = [
       category: 'Newbie', 
       image: '/ceo.jpg', 
       title: 'NAme reto reto obvio', 
-      description: 'lorem lorem', 
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+      nisi ut aliquip ex ea commodo consequat. `, 
       technologies: ['React', 'TypeScript', 'TailwindCSS'],
       link: '',
       color: ''
