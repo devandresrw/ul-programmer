@@ -24,7 +24,7 @@ export default function CodePage() {
         <Squares />
         <div className=" absolute w-full h-full inset-0 flex justify-center items-start">
         <div className="mt-3 flex flex-col justify-center items-center gap-2
-        md:gap-10 md:mt-10">
+        md:gap-3 md:mt-10">
           <SceneCodes text='[ DEV_CODES ]' styles='w-10' />  
           <SpotlightCard
             className="px-4 py-4"

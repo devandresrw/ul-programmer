@@ -16,16 +16,7 @@ export default function FrontendPage() {
         <div className="mt-2 botder-2 border-gray-300
       flex flex-col justify-center items-center gap-2">
           <SceneCodes text='[ FRONT-END ]' styles='' />  
-          <SpotlightCard
-            className="px-4 py-4"
-            spotlightColor="rgba(53, 100, 122, 0.25)">
-          <p className='text-center text-base leading-[19px] w-[22rem] 
-           rounded-lg font-black text-zinc-300'>
-          Mis habilidades de frontend fueron puestas a prueba en los 
-          siguientes retos, filtralos en niveles de dificultad, cada uno
-          cuenta con una descripción y tecnologías utilizadas.
-          </p>
-          </SpotlightCard>
+          
       </div>
       <div className="">
         <CategoryButtons categories={categories} />
@@ -63,6 +54,16 @@ export default function CodePage() {
   )
 }
 
+<SpotlightCard
+            className="px-4 py-4"
+            spotlightColor="rgba(53, 100, 122, 0.25)">
+          <p className='text-center text-base leading-[19px] w-[22rem] 
+           rounded-lg font-black text-zinc-300'>
+          Mis habilidades de frontend fueron puestas a prueba en los 
+          siguientes retos, filtralos en niveles de dificultad, cada uno
+          cuenta con una descripción y tecnologías utilizadas.
+          </p>
+          </SpotlightCard>
 
 
 */
