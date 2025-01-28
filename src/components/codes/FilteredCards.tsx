@@ -19,8 +19,6 @@ interface FilteredCardsProps {
   cards: CardItem[];
 }
 
-
-
 export const FilteredCards = ({ cards }: FilteredCardsProps) => {
   const [selectedCard, setSelectedCard] = useState<CardItem | null>(null);
   const selectedCategory = useCategoryStore((state) => state.category);
