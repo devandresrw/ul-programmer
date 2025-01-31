@@ -2,7 +2,7 @@ export const frontendCards = [
     {
       id: 1,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/1.jpg',
       title: 'Recipe page',
       description: `Es una página diseñada para mostrar recetas de cocina
          de manera visual y organizada. Incluye secciones para ingredientes,
@@ -14,7 +14,7 @@ export const frontendCards = [
     {
       id: 2,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/2.jpg',
       title: 'Social links profile',
       description: `Una página básica que muestra enlaces a perfiles sociales
        con un diseño limpio y disposición sencilla y responsiva.`,
@@ -25,7 +25,7 @@ export const frontendCards = [
     {
       id: 3,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/3.jpg',
       title: 'Blog preview card',
       description: `Una tarjeta básica diseñada para mostrar vistas previas de blogs, 
       incluyendo título, descripción breve e imagen destacada.`,
@@ -36,7 +36,7 @@ export const frontendCards = [
     {
       id: 4,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/4.jpg',
       title: 'FAQ accordion',
       description: `Un diseño básico para una sección de preguntas frecuentes, 
       con preguntas listadas y respuestas visibles al expandir manualmente.`,
@@ -47,7 +47,7 @@ export const frontendCards = [
     {
       id: 5,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/5.jpg',
       title: 'Workit landing page',
       description: `Landing básica para una aplicación de análisis de datos.
        Destaca información procesable, decisiones basadas en datos y precios accesibles.`,
@@ -58,7 +58,7 @@ export const frontendCards = [
     {
       id: 6,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/6.jpg',
       title: 'Results summary component',
       description: `Un componente básico que muestra puntajes organizados por categorías como Reacción,
        Memoria, Verbal y Visual, con íconos representativos.`,
@@ -69,7 +69,7 @@ export const frontendCards = [
     {
       id: 7,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/7.jpg',
       title: 'Product preview card component',
       description: `Un componente básico que muestra un producto con imagen, nombre, 
       descripción breve, precio y un botón de compra.`,
@@ -80,7 +80,7 @@ export const frontendCards = [
     {
       id: 8,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/8.jpg',
       title: 'Skilled e-learning landing page',
       description: `Landing básica para una plataforma de aprendizaje, destacando habilidades clave, 
       beneficios del e-learning y opciones accesibles para usuarios.`,
@@ -91,7 +91,7 @@ export const frontendCards = [
     {
       id: 9,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/9.jpg',
       title: 'Interactive rating component',
       description: `Un componente simple donde los usuarios califican del 1 
       al 5 y ven el resultado final después de enviar`,
@@ -102,7 +102,7 @@ export const frontendCards = [
     {
       id: 10,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/10.jpg',
       title: 'QR code component',
       description: `Un componente simple que muestra un código QR generable
        dinámicamente, permitiendo a los usuarios escanear y acceder a información o enlaces.`,
@@ -113,7 +113,7 @@ export const frontendCards = [
     {
       id: 11,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/11.jpg',
       title: 'NFT preview card component',
       description: `Un componente que muestra una vista previa de un NFT, 
       con imagen, título, descripción breve y detalles como precio o propietario.`,
@@ -124,7 +124,7 @@ export const frontendCards = [
     {
       id: 12,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/12.jpg',
       title: 'Equalizer landing page',
       description: `Landing page para una app de ecualizador de audio en Android e iOS, 
       con control avanzado de graves, medios, agudos y más.`,
@@ -135,7 +135,7 @@ export const frontendCards = [
     {
       id: 13,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/13.jpg',
       title: 'Order summary component',
       description: `Componente que muestra el resumen de un plan anual, 
       incluyendo detalles del plan, duración, precio y total a pagar.`,
@@ -146,7 +146,7 @@ export const frontendCards = [
     {
       id: 14,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/14.jpg',
       title: 'Stats preview card component',
       description: `Componente que muestra una tarjeta con estadísticas clave, destacando
        beneficios de análisis de datos para mejorar decisiones sobre ingresos, experiencia del
@@ -158,7 +158,7 @@ export const frontendCards = [
     {
       id: 15,
       category: 'Newbie',
-      image: '/ceo.jpg',
+      image: '/15.jpg',
       title: 'Meet landing page',
       description: `Landing para una app de chat grupal, facilitando la conexión cara a cara virtualmente
        y la colaboración en cualquier dispositivo.`,
