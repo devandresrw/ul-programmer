@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     description: "Habilidades, proyectos y desarrollos",
     images: [
       {
-        url: "https://programmer.andresrw.com/ceo.jpg",
+        url: "/ceo.jpg",
       }],
     countryName: "Colombia",
     emails: "contact@andresrw.com",
@@ -80,11 +80,11 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Next.js',
-    description: 'The React Framework for the Web',
+    description: '[Habilidades, Experiencias, Proyectos y Desarrollos]',
     siteId: '1467726470533754880',
     creator: '@nextjs',
     creatorId: '1467726470533754880',
-    images: ['https://programmer.andresrw.com/ceo.jpg'], // Must be an absolute URL
+    images: ['/ceo.jpg'], // Must be an absolute URL
   },
 };
 
