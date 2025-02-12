@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     description: "Habilidades, proyectos y desarrollos",
     images: [
       {
-        url: "https://programmer.andresrw.com/og-image.jpg",
+        url: "https://programmer.andresrw.com/ceo.jpg",
       }],
     countryName: "Colombia",
     emails: "contact@andresrw.com",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     siteId: '1467726470533754880',
     creator: '@nextjs',
     creatorId: '1467726470533754880',
-    images: ['https://nextjs.org/og.png'], // Must be an absolute URL
+    images: ['https://programmer.andresrw.com/ceo.jpg'], // Must be an absolute URL
   },
 };
 
