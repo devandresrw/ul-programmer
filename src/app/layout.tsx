@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     url: "https://programmer.andresrw.com/",
     siteName: "Andrés R.W.",
     title: "[Andrés R.W. | Frontend Engineer]",
-    description: "Habilidades, proyectos y desarrollos",
+    description: "[Habilidades, Experiencias, Proyectos y Desarrollos]",
     images: [
       {
         url: "/ceo.jpg",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
   category: "Tecnología", // Ejemplo de categoría
   twitter: {
     card: 'summary_large_image',
-    title: 'Next.js',
+    title: '[Andrés R.W. | Frontend Engineer]',
     description: '[Habilidades, Experiencias, Proyectos y Desarrollos]',
     siteId: '1467726470533754880',
     creator: '@nextjs',
